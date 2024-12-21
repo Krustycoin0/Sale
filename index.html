@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidity Generator Token</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liquidity Generator Token</h1>
+        <div id="connect-wallet">
+            <button id="connectButton">Connect Wallet</button>
+            <p id="connected-address"></p>
+        </div>
+        <div id="token-info">
+            <p><strong>Name:</strong> <span id="token-name"></span></p>
+            <p><strong>Symbol:</strong> <span id="token-symbol"></span></p>
+            <p><strong>Decimals:</strong> <span id="token-decimals"></span></p>
+            <p><strong>Total Supply:</strong> <span id="token-total-supply"></span></p>
+            <p><strong>Your Balance:</strong> <span id="token-balance"></span></p>
+        </div>
+
+        <div id="transfer-section">
+            <h2>Transfer Tokens</h2>
+            <input type="text" id="recipientAddress" placeholder="Recipient Address">
+            <input type="number" id="transferAmount" placeholder="Amount to Transfer">
+            <button id="transferButton">Transfer</button>
+            <p id="transfer-status"></p>
+        </div>
+
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
